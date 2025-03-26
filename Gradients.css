@@ -1,0 +1,11 @@
+/* .lineargradient{
+    height:400px;
+    width:400px;
+    border:2px solid black;
+    background-image: linear-gradient(rgb(255, 0, 212) 0%,rgb(36, 194, 131) 5%,rgb(24, 173, 222) 5%,rgb(245, 43, 225) 5%); 
+    background-image: repeating-linear-gradient(green 10%,pink 20%,green 30%, pink 40%);
+    background-image: radial-gradient(green 10%,pink 20%,green 30%, pink 40%);
+    background-image:repeating-radial-gradient(green 10%,pink 20%,green 30%, pink 40%);
+    background-image:conic-gradient(green 10%,pink 20%,green 30%, pink 40%);
+    background-image:repeating-conic-gradient(green 10%,pink 20%,green 30%, pink 40%);
+} */

@@ -1,0 +1,12 @@
+/* #seacontent{
+    text-align: center;
+}
+#vid{
+    display: flex;
+    justify-content: center;
+}
+p ::selection{
+    color:green;
+    background-color: blueviolet;
+} */
+

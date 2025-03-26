@@ -1,0 +1,105 @@
+/* body {
+    margin: 0;
+    overflow: hidden;
+} */
+ body{
+    margin:0;
+    overflow: hidden;
+ }
+
+/* .sky {
+    background-color: #87CEEB;
+    height: 50vh;
+    position: relative;
+} */
+.sky{
+    height:50vh;
+    background-color: skyblue;
+    position: relative;
+}
+
+/* .airplane {
+    position: absolute;
+    top: 20%;
+    left: -200px;
+    width: 100px;
+    animation: flyAcross 5s linear infinite;
+} */
+.airplane{
+    position:absolute;
+    top:20%;
+    left:-200px;
+    width:100px;
+    animation:flyAcross 4s linear infinite;
+}
+
+/* @keyframes flyAcross {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+} */
+@keyframes flyAcross {
+    0%{
+        left:-200px;
+    }
+    100%{
+        left:100%;
+    }
+}
+
+.grass {
+    background-color: #32CD32;
+    height: 30vh;
+    position: relative;
+}
+
+.wave {
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        -45deg,
+        #228B22,
+        #228B22 10px,
+        #32CD32 10px,
+        #32CD32 20px
+    );
+    animation: waveMove 2s linear infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 20px 0;
+    }
+}
+
+.road {
+    background-color: #333;
+    height: 20vh;
+    position: relative;
+}
+
+.car {
+    position: absolute;
+    bottom: 10%;
+    left: -100px;
+    width: 150px;
+    animation: drive 3s ease-in-out infinite;
+}
+
+@keyframes drive {
+    0% {
+        left: -100px;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        left: 100%;
+    }
+}
