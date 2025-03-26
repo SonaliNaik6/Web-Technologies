@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function scope
+        // let b=20;
+        // function test(){
+        //     const a=10;
+        //     console.log(a);
+        //     console.log(b);
+        // }
+        // test()
+
+        // let b=20;
+        // function test(){
+        //     const a=10;
+        //     console.log(a);
+        //     console.log(b);
+        // }
+        // test()
+        //Anonymous function
+        // function (){
+        //     console.log("hello");
+        // }
+        // ()//we can't execute this because it doesnot have name to overcome this we have named function and immediate invoking function
+        
+        //Named Function
+        // function demo(){
+        //     console.log("hello world");
+        // }
+        // demo()
+        // function demo(){
+        //     console.log("Hello world");
+        // }
+        // demo()
+
+        //3.Function with expression
+        // let myFunc=function(){
+        //     console.log("hello world");
+        // }
+        // myFunc()
+
+        // let myFunc=function (){
+        //     console.log("hello world");
+        // }
+        // myFunc()
+
+        //4.first class function//the function which is passed as an value to a variable or expression that passed function is called as first class function
+        // let myFun=function(){
+        //     console.log("hello");
+        // }
+        // myFun()
+
+        // let myFunc=function(){
+        //     console.log("hello");
+        // }
+        // myFunc()
+
+        //5.Arrow function//1.if arrow function has a single statement no need to take a braces
+        // let arrowRul=()=>console.log("keep in touch");
+        // 2.If Arrow function has a declared variables must and should use braces
+        // let arrowRul=()=>{
+        //     let ax=100;
+        //     console.log("keep in touch");
+        // }
+        // arrowRul()
+        // 3.If we have return keyword inside the arrow function must and sholud use braces
+        // let third=()=>{
+        //     return "third class fellow";
+        // }
+        // console.log(third())
+        // 4.If we have return keyword inside the arrow function use outside log statement
+        // let third=()=>{
+        //     return "third class "
+        // }
+        // console.log(third())
+        // let third=()=>{
+        //     console.log("third class fellows");
+        // }
+        // console.log(third());//tthird class fellows
+
+        // 5.when the statement is executing by using log statement inside the arrow function just call the function,no need to take the log statement
+        // let third=()=>{
+        //     console.log("hello");
+        // }
+        // third()
+
+        // console.log(window);s
+        // console.log(this);
+
+        // var ab=10;
+        // let bc=20;
+        // const ca=30;
+
+        // console.log(window.ab);//10
+        // console.log(window);
+        // console.log(window.bc);//undefined
+        // console.log(window);//10
+
+        // 6.the function is called before the function declaration sholud be enclosed with paranthesis().
+        // if we use multiple iife need to put a comma between every iife
+        //iife use is it wont allows outside variables to get polluted
+        // (function(){
+        //     console.log("first");
+        // })
+        // (),
+        // (function(){
+        //     console.log("second");
+        // })
+        // ()
+        // (function(){
+        //     console.log("first");
+        // })
+        // (),
+        // (function(){
+        //     console.log("second");
+        // })
+        // ()
+
+        // 7.Callback function
+        // function test(callback, a){
+        //     console.log("hello"+ a);
+        //     callback()
+        // }
+        // function demo(){
+        //     console.log("I am here");
+        // }
+        // test(demo,"good morning");
+
+        // function test(callback,a){
+        //     console.log("hello"+a);
+        //     callback()
+        // }
+        // function demo(){
+        //     console.log("I am here");
+        // }
+        // test(demo, "good morning")
+
+        // function test(callback, a){
+        //     console.log("hello"+a)
+        //     callback()
+        // }
+        // function demo(){
+        //     console.log("I am here");
+        // }
+        // test(demo,"good morning");
+
+        // 8.Higher order function
+        // the function which accepts another function as parameter is called as higher order function it can take string and function as parameter
+        // function red(){
+        //     console.log("hello");
+        // }
+        // function yellow(){
+        //     console.log("green");
+        // }
+        // function blue(a,b,str){
+        //     console.log(str+"good morning");
+        // }
+        // blue(red,yellow,"hi");
+
+        
+
+    </script>
+</body>
+</html>

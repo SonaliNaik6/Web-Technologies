@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj={
+        //     id:1,
+        //     name:"abc"
+        // }
+        // console.log(obj);
+
+        // let obj1={
+        //     id:2,
+        //     name:"def"
+        // }
+        // console.log(obj1)
+
+        // let obj2={
+        //     id:4,
+        //     name:"ghi"
+        // }
+        // console.log(obj2)
+
+        // let obj3={
+        //     id:5,
+        //     name:"hai kya najara hai"
+        // }
+        // console.log(obj3);
+
+        //fetch//we can fetch the javascript objects in 2 ways 1.by using dot notation and 2.array notation
+        // console.log(obj.id);
+        // console.log(obj["id"]);
+        // console.log({}==[])
+
+        // let obj={
+        //     id:1,
+        //     name:"abc"
+        // }
+        // let obj1={
+        //     age : 14
+        // }
+        // console.log(obj1)
+        //1.using dot notation
+        // console.log(obj);
+        // console.log(obj.id);
+        // console.log(obj.name);
+        //2.using array notation
+        // console.log(obj["id"]);
+        // console.log(obj[name]);//undefined
+        // console.log(obj["name"]);
+        // console.log({}==[])//false
+
+        //delete
+        // console.log(delete obj.name);
+        // console.log(obj);
+
+        // console.log(delete obj.name);
+        // console.log(obj);
+        // console.log(obj.id);
+
+        // console.log(delete obj.id);
+        // console.log(obj);
+
+        //add
+        // console.log(obj1.age=24);
+        // console.log(obj1);
+
+         // nested object
+    //      let myObj={
+    //         id:1,
+    //         mobile:{
+    //             color:"black",
+    //             name:"samsung",
+    //             price:10000
+    //         }
+    //     }
+    //     console.log(myObj);
+    //     console.log(myObj["mobile"]["price"]);
+    //     console.log(myObj.mobile.price);
+
+    //     console.log(delete[myObj]);
+    //     console.log(myObj.mobile.price);
+
+
+    //     let strValue="java script";
+    //  console.log(strValue.length);
+    //  console.log(strValue.split(" ").reverse("").join(" "));
+
+
+    //  let strValue2="Sonali";
+    //  console.log(strValue2.length);
+    //  console.log(strValue2.split("").reverse("").join(""));
+
+    //nested object
+    // let myObj1={
+    //         id:1,
+    //         mobile:{
+    //             color:"black",
+    //             name:"samsung",
+    //             price:10000
+
+    //         }
+    //     }
+    //     console.log(myObj1);
+    //     console.log(myObj1["mobile"]["price"]);
+    //     console.log(myObj1.mobile.price);
+    //     console.log(delete[myObj1]);
+    //     console.log(myObj1.mobile.price);
+
+
+    // nested object
+    // let myObj={
+    //     id:1,
+    //     mobile:{
+    //         name:"samsung",
+    //         price:10000,
+    //         color:"black"
+    //     }
+    // }
+    // console.log(myObj);
+    // console.log(myObj["mobile"]["price"]);//1000
+    // console.log(myObj.mobile.price);//1000
+    // console.log(delete[myObj]);//true
+    // console.log(myObj.mobile.price);//1000
+        
+    //window is an global object which accepts only global variable,function and methods
+    // console.log(window);
+    // console.log(window);
+    //this keyword points to the window object aswell as stores the address of the window
+    // console.log(this);
+
+    // console.log(this===window);//true //both this and window value are same
+    // console.log(this===window);//true//both this and window values are same
+
+     //why var is global
+    // var a=100;
+    // console.log(window.a);
+    // console.log(window);
+    // var a=100;//let a=100//undefined
+    // console.log(window.a);//100
+
+    // var b=200;
+    // console.log(window.b);
+    // console.log(window);
+
+    // let myObj=[
+    //         {
+    //             id:1,
+    //         },
+    //         {
+    //             id:2
+    //         }
+    //     ]
+    //     console.log(myObj);
+    //     console.log(myObj[0]);
+
+    // let myObj1=[
+    //     {
+    //         id:1,
+    //     },
+    //     {
+    //         id:2
+    //     }
+    // ]
+    // console.log(myObj1);
+    // console.log(myObj1[0]);
+
+
+    //freeze//is a object method which doesnot make any properties to alter like add,delete,update
+    // let freezeObj1={
+    //         offName:"TCS",
+    //         noEmp:2000,
+    //         place:"Rajajinagar"
+    //     }
+    //     console.log(freezeObj);
+    //     console.log(Object.freeze(freezeObj));
+    //     console.log(freezeObj.empName="sonali");
+    //     console.log(freezeObj);
+    //     console.log(Object.isFrozen(freezeObj));
+
+    // let freezeObj={
+    //     name:"sonali",
+    //     phno:989797,
+    //     place:"Karwar"
+    // }
+    // console.log(freezeObj);
+    // console.log(Object.freeze(freezeObj));//object
+    // console.log(freezeObj.empName="sonali");//sonali
+    // console.log(freezeObj);//object
+    // console.log(Object.isFrozen(freezeObj));//true
+
+    // let sealObj1={
+    //         comName:"WIPRO",
+    //         Emp:4000,
+    //         place:"Bangalore"
+    //     }
+    //     console.log(sealObj);
+    //     console.log(Object.seal(sealObj));
+    //     console.log(sealObj.empSal=100000);
+    //     console.log(sealObj);
+
+    //     console.log(delete sealObj.comName);
+    //     console.log(sealObj);
+
+    //     console.log(sealObj.comName="test yantra");
+    //     console.log(sealObj);
+
+    // let sealObj={
+    //     companyName:"WIPRO",
+    //     EmpNo:5000,
+    //     place:"Bangalore"
+    // }
+    // console.log(sealObj);//object
+    // console.log(Object.seal(sealObj));//object
+    // console.log(sealObj.empSal=10000);//10000
+    // console.log(sealObj);//object
+
+
+    
+    // let a1={
+    //         id:1,
+    //         pincode:567676
+    //     }
+    // let b1={
+    //         id:3,
+    //         place:"hubli"
+    //     }
+    // let c1={
+    //         id:4,
+    //         place:"Rajajinagar"
+    //     }
+    //     console.log(Object.assign(a1,b1,c1));
+    //     let result=Object.assign(a1,b1,c1);
+    //     console.log(result);
+
+    //     let keys=Object.keys(result);
+    //     console.log(keys);
+
+        // let values=Object.values(result);
+        // console.log(values);
+
+    //     let values=Object.values(result);
+    //     console.log(values);
+
+    // let a1={
+
+    //     id:1,
+    //     pincode:581301,
+    //     place:"Karwar"
+
+    // }
+    // let b1={
+    //     id:2,
+    //     pincode:581302,
+    //     place:"hubali"
+    // }
+    // let c1={
+    //     id:3,
+    //     pincode:86786,
+    //     place:"kolkatta"
+    // }
+    // console.log(Object.assign(a1,b1,c1));
+    // let result=console.log(Object.assign(a1,b1,c1));
+    // console.log(result);
+
+    
+    // let object1={
+    //         team:"India",
+    //         captain:"suryakumar yadav",
+    //         member:12
+    //     }
+    //     console.log(object1);
+    //     console.log("before the entries");
+    //     let entries=Object.entries(object1);
+    //     console.log("after the entries");
+    //     console.log(entries);
+
+
+    // let object1={
+    //     team:"india",
+    //     captain:"suryakumar yadav",
+    //     member:12
+    // }
+    // console.log(object1);
+    // console.log("before entries");
+    // let entries=Object.entries(object1);
+    // console.log("after the entries");
+    // console.log(entries);
+
+     //OTP
+    // let num=new String();
+    // console.log(num,typeof num);//because of b new keyword it is object
+
+
+    // let num=new String();
+    // console.log(num, typeof num);
+
+    
+    // let math=Math;
+    // console.log(math);
+
+    // let math=Math;
+    // console.log(math);
+    // console.log(math.ceil(100.2));//101
+    // console.log(math.floor(100.2));//100
+
+
+    //OTP
+    // console.log(math.ceil(100.2));
+    // console.log(math.floor(100.2));
+    // console.log(math.ceil(100.2));
+
+
+    //    let randomNum=math.ceil(math.random()*100000).toString(20);
+    //    console.log(randomNum);
+    //     alert(randomNum);
+
+    // let randomNum=math.ceil(math.random()*100000).toString(20);
+    // console.log(randomNum);
+    // alert(randomNum);
+
+    // console.log(math.min(100,200));
+    // console.log(math.max(100,290));
+
+    // console.log(math.min(100,200));
+    // console.log(math.max(100,200));
+
+    // console.log(math.pow(4,3));
+    //    console.log(math.cbrt(125));
+    //    console.log(math.pi);
+    //    console.log(math.abs(-10));
+
+    
+    // let math=Math;
+    // console.log(math);//math object
+    // console.log(math.pow(4,3));//64
+    // console.log(math.cbrt(125));//5
+    // console.log(math.pi);//undefined
+
+    // let cr=Object.create({});
+    //     console.log(cr);
+    //     cr.id=101;
+    //     cr.name="abc"
+    //     console.log(cr);
+
+
+    // let cr=Object.create({});
+    // console.log(cr);
+    // cr.id=101;
+    // cr.name="sonali"
+    // console.log(cr);//we can create objects
+
+    // let date=new Date;
+    // console.log(date, typeof date);
+    // console.log(date,getDate());
+
+    // let date=new Date;
+    // console.log(date, typeof date);//897487950lkkkajd date format
+    // console.log(date.getDate());//7
+
+    // let date=new Date; 
+    // console.log(date.getDay());//6
+    // console.log(date.getFullYear());//2024
+    // console.log(date.getHours());//23
+    // console.log(date.getMinutes());//51
+    // console.log(date.getSeconds());//58
+
+    // let date=new Date; 
+    // let date1=new Date(2024,3,25,14,31,10)
+    //     console.log(date1);//Thu Apr 25 2024 14:31:10 GMT+0530 (India Standard Time)
+    //     console.log(date.toLocaleString());//12/7/2024, 11:55:49 PM
+    //     console.log(date.toDateString());//Sat Dec 07 2024
+
+    //setTimeout and setinterval
+    // setTimeout(()=>{
+    //         console.log("statement one");//statement 1
+    //     },3000);
+
+    // setTimeout(()=>{
+    //     console.log("statement two");//statement two
+    // },3000);
+
+    // setInterval(()=>{
+    //     console.log("hello world");//hello world
+    // },2000)
+
+    
+
+
+
+    
+
+
+    
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
